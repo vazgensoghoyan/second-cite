@@ -1,0 +1,208 @@
+/**
+ * Базовые стили для всего сайта
+ */
+body {
+	position: relative;
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 16px;
+	line-height: 1.4;
+	color: #000;
+	min-width: 320px;
+	overflow-x: hidden;
+	height: auto;
+}
+
+
+/**
+ * Другие стили
+ */
+.navbar {
+	width: 100%;
+	height: 70px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
+	margin-bottom: 80px;
+}
+
+.navbar .container {
+	height: inherit;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navbar-menu {
+	list-style-type: none;
+	padding-left: 0;
+	margin-bottom: 0;
+	cursor: default;
+}
+
+.navbar-menu li {
+	display: inline-block;
+}
+
+.navbar-menu li a {
+	display: inline-block;
+	color: #000;
+	opacity: 0.6;
+	text-decoration: none;
+	padding: 10px;
+	transition: all .1s ease-in-out;
+}
+
+.navbar-menu li a:hover {
+	color: rgb(255, 127, 32);
+	/*opacity: 1;*/
+}
+
+.navbar-menu li .current {
+	opacity: 0.9;
+}
+
+.navbar-menu li .current:hover {
+	opacity: 0.9;
+	color: #000;
+	cursor: inherit;
+}
+
+.navbar-wrap {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.callback {
+	margin-left: 30px;
+	padding: 10px 30px;
+	background-color: coral;
+	border-radius: 100px;
+	color: #fff;
+	text-decoration: none;
+	transition: all .11s ease-out;
+}
+
+.callback:hover {
+	transform: scale(1.02);
+	box-shadow: 0 7px 10px rgba(255, 127, 80, .5);
+	color: #fff;
+}
+
+.navbar-brand {
+	font-weight: 700;
+	font-size: 26px;
+	text-decoration: none;
+	color: #000;
+	transition: all .1s ease-in-out;
+}
+
+.navbar-brand:hover {
+	color: coral;
+}
+
+/*main part*/
+
+.header {
+	min-height: 700px;
+}
+
+.header-content h1 {
+	font-size: 38px;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+.header-content h4 {
+	font-size: 23px;
+	font-weight: 400;
+}
+
+main {
+	text-align: center;
+}
+
+main p {
+	font-size: 1.3em;
+    line-height: 150%;
+	margin-bottom: 2em;
+}
+
+.input {
+    margin-bottom: 1em;
+}
+
+.numberInput {
+    max-width: 20%;
+    height: 40px;
+    padding: 0.375em 0.75em;
+    font-family: inherit;
+    font-size: 1.1em;
+    border: 1px solid #bdbdbd;
+    border-radius: 0.25rem;
+    margin-bottom: 1em;
+    background-clip: padding-box;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.numberInput:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+}
+
+.solveIt {
+    background-color: rgb(255, 176, 86);
+	border-style: none;
+    width: 20%;
+	text-transform: uppercase;
+	height: 40px;
+    font-size: 1.1rem;
+	font-weight: 700;
+    margin-bottom: 2em;
+    border-width: 2px;
+    border-radius: 100px;
+	box-shadow: 0 5px 8px rgba(0, 0, 0, .3);
+    transition: all 0.1s ease-in-out;
+}
+
+.solveIt:hover {
+	background-color: #fffcee;
+	border: solid 3px rgb(255, 176, 86);
+}
+
+.solveIt:active {
+    background-color: #e9e9e9;
+    transform: scale(0.98);
+}
+
+.solveIt:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px lightskyblue;
+}
+
+
+dl {
+    width: 75%;
+    margin: 0% auto;
+    border: 3px double #ccc;
+    padding: 1em;
+    padding-left: 3em;
+}
+
+dt {
+    font-size: 1.2em;
+    float: left;
+    clear: left;
+    max-width: 100px;
+    text-align: right;
+    font-weight: bold;
+    color: black;
+}
+
+dt::after {
+    content: ":";
+}
+
+dd {
+    margin: 0 0 0 110px;
+    font-size: 1.1em;
+    padding: 0 0 0.5em 0;
+}
+

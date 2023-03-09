@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML & CSS практика от AVIS TV</title>
+
+	<!-- Bootstrap reboot (для сброса стилей) -->
+	<link rel="stylesheet" href="../libs/bootstrap-reboot.min.css">
+
+	<!-- Bootstrap сетка -->
+	<link rel="stylesheet" href="../libs/bootstrap-grid.min.css">
+
+	<!-- Шрифты с Google Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+	<!-- Стили сайта -->
+	<link rel="stylesheet" href="../css/styles.css">
+    
+	<!-- Скрипты для решения уравнений -->
+	<script src="../scripts/complex.js" defer></script>
+	<script src="../quadratic/quadraticEquation.js" defer></script>
+	<script src="../cubic/cubicEquation.js" defer></script>
+	<script src="quarticEquation.js" defer></script>
+	<script src="dataProcessing4.js" defer></script>
+</head>
+<body>
+
+	<nav class="navbar">
+		<div class="container">
+			<a href="#" class="navbar-brand">OUR SOLVER</a>
+
+			<div class="navbar-wrap">
+				<ul class="navbar-menu">
+					<li><a href="../index.html">Главная</a></li>
+					<li><a href="../quadratic/quadratic.html">Квадратные</a></li>
+					<li><a href="../cubic/cubic.html">Кубические</a></li>
+					<li><a class="current">Четвертой степени</a></li>
+				</ul>
+				
+				<a href="#" class="callback">Связатья с автором</a>
+			</div>
+		</div>
+	</nav>
+
+	<main>
+		<p>
+			Вводите данные, обозначающие пять коэффициентов для комплексного уравнения вида ax<sup>4</sup>+bx<sup>3</sup>+cx<sup>2</sup>+dx+e=0
+		</p>
+
+		<div class="input">
+			<input class="numberInput" type="text" id="a">
+			<input class="numberInput" type="text" id="b">
+			<input class="numberInput" type="text" id="c">
+			<input class="numberInput" type="text" id="d">
+			<input class="numberInput" type="text" id="e">
+		</div>
+		<input type="submit" value="Solve" class="solveIt">
+
+		<div class="answers">
+			<dl>
+				<dt>x1</dt>
+				<dd>?</dd>
+				<dt>x2</dt>
+				<dd>?</dd>
+				<dt>x3</dt>
+				<dd>?</dd>
+				<dt>x4</dt>
+				<dd>?</dd>
+			</dl>
+		</div>
+	</main>
+	
+</body>
+</html>
