@@ -122,29 +122,35 @@ main {
 main p {
 	font-size: 1.3em;
     line-height: 150%;
-	margin-bottom: 2em;
+	margin-bottom: 1em;
 }
 
 .input {
+	/*display: flex;
+	flex-direction: row;
+	padding: 0 200px;
+	justify-content: space-around;
+	align-items: center;*/
     margin-bottom: 1em;
 }
 
 .numberInput {
-    max-width: 20%;
+	position: relative;
+    width: 250px;
     height: 40px;
     padding: 1.1em 0.75em;
+	margin: 5px 10px;
     font-family: inherit;
     font-size: 1.1em;
     border: 1px solid #bdbdbd;
     border-radius: 0.25em;
-    margin-bottom: 1em;
     background-clip: padding-box;
     transition: box-shadow 0.2s ease-in-out;
 }
 
 .numberInput:focus {
     outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+    box-shadow: 0 0 0 3px rgba(158, 158, 158, 0.25);
 }
 
 .solveIt {
