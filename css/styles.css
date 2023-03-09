@@ -132,11 +132,11 @@ main p {
 .numberInput {
     max-width: 20%;
     height: 40px;
-    padding: 0.375em 0.75em;
+    padding: 1.1em 0.75em;
     font-family: inherit;
     font-size: 1.1em;
     border: 1px solid #bdbdbd;
-    border-radius: 0.25rem;
+    border-radius: 0.25em;
     margin-bottom: 1em;
     background-clip: padding-box;
     transition: box-shadow 0.2s ease-in-out;
@@ -196,6 +196,10 @@ dt {
     color: black;
 }
 
+dt:hover {
+	cursor: default;
+}
+
 dt::after {
     content: ":";
 }
@@ -205,4 +209,3 @@ dd {
     font-size: 1.1em;
     padding: 0 0 0.5em 0;
 }
-
