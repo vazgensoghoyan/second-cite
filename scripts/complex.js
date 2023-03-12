@@ -87,7 +87,7 @@ class Complex {
             if (im == 1 || im == -1)
                 result += (im < 0) ? "-i" : "i";
             else
-                result += (im < 0) ? "-" + (-im).toString() : "+" + im.toString();
+                result += ((im < 0) ? "-" + (-im).toString() : "+" + im.toString()) + "i";
         }
         
         return (result[0] == "+") ? result.substring(1, result.length - 1) : result;
