@@ -18,7 +18,7 @@ body {
  */
 .navbar {
 	width: 100%;
-	height: 85px;
+	height: 80px;
 	box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
 	margin-bottom: 80px;
 }
@@ -43,7 +43,7 @@ body {
 
 .navbar-menu li a {
 	display: inline-block;
-	font-size: 1.2em;
+	font-size: 1.1em;
 	color: #000;
 	opacity: 0.6;
 	text-decoration: none;
@@ -58,7 +58,7 @@ body {
 
 .navbar-menu li .current {
 	opacity: 0.9;
-	font-size: 1.3em;
+	font-size: 1.25em;
 }
 
 .navbar-menu li .current:hover {
@@ -90,7 +90,7 @@ body {
 
 .navbar-brand {
 	font-weight: 700;
-	font-size: 30px;
+	font-size: 28px;
 	text-decoration: none;
 	color: #000;
 	transition: all .1s ease-in-out;
@@ -107,13 +107,13 @@ body {
 }
 
 .header-content h1 {
-	font-size: 38px;
+	font-size: 34px;
 	font-weight: 700;
 	margin-bottom: 10px;
 }
 
 .header-content h4 {
-	font-size: 23px;
+	font-size: 22px;
 	font-weight: 400;
 }
 
@@ -128,11 +128,6 @@ main p {
 }
 
 .input {
-	/*display: flex;
-	flex-direction: row;
-	padding: 0 200px;
-	justify-content: space-around;
-	align-items: center;*/
     margin-bottom: 1em;
     margin-top: 2em;
 }
@@ -142,9 +137,9 @@ main p {
     width: 250px;
     height: 40px;
     padding: 1.1em 0.75em;
-	margin: 5px 10px;
+	margin: 9px 9px;
     font-family: inherit;
-    font-size: 1.3em;
+    font-size: 1.2em;
     border: 1px solid #bdbdbd;
     border-radius: 0.25em;
     background-clip: padding-box;
@@ -164,7 +159,8 @@ main p {
 	width: 250px;
     font-size: 1.2rem;
 	font-weight: 700;
-	margin-top: 1em;
+	margin-top: 0;
+	padding: 5px;
     margin-bottom: 2em;
     border-width: 2px;
     border-radius: 100px;
@@ -187,8 +183,7 @@ main p {
     box-shadow: 0 0 0 2px lightskyblue;
 }
 
-
-dl {
+.answers dl {
     width: 50%;
     margin: 0% auto;
     border: 3px double #ccc;
@@ -196,7 +191,7 @@ dl {
     padding-left: 3em;
 }
 
-dt {
+.answers dt {
     font-size: 1.2em;
     float: left;
     clear: left;
@@ -206,23 +201,23 @@ dt {
     color: black;
 }
 
-dt:hover {
+.answers dt:hover {
 	cursor: default;
 }
 
-dt::after {
+.answers dt::after {
     content: ":";
 }
 
-dd {
+.answers dd {
     margin: 0 0 0 110px;
-    font-size: 1.3em;
+    font-size: 1.25em;
     padding: 0 0 0.5em 0;
 }
 
 @media (max-width: 1400px) {
 	.navbar {
-		height: 70px;
+		height: 60px;
 	}
 
 	.navbar-menu li a {
@@ -234,7 +229,15 @@ dd {
 	}
 
 	.navbar-brand {
-		font-size: 26px;
+		font-size: 24px;
+	}
+
+	.header-content h1 {
+		font-size: 32px;
+	}
+
+	.header-content h4 {
+		font-size: 20px;
 	}
 
 	main p {
@@ -243,6 +246,8 @@ dd {
 
 	.numberInput {
 		font-size: 1.1em;
+		width: 230px;
+		margin: 7px 7px;
 	}
 
 	.solveIt {
@@ -251,53 +256,13 @@ dd {
 		font-size: 1.1em;
 	}
 
-	dd {
+	.answers dd {
 		font-size: 1.1em;
+		padding-left: 0em;
 	}
 }
 
 @media (max-width: 1200px) {
-	.navbar-brand {
-		font-size: 24px;
-	}
-
-	.header-content h1 {
-		font-size: 34px;
-	}
-
-	.header-content h4 {
-		font-size: 20px;
-	}
-
-	main p {
-		font-size: 1.1em;
-	}
-
-	.numberInput {
-		font-size: 1.1em;
-		width: 200px;
-	}
-
-	.solveIt {
-		height: 40px;
-		width: 270px;
-		font-size: 1.1em;
-	}
-
-	dt {
-		font-size: 1em;
-	}
-
-	dd {
-		font-size: 1.1em;
-	}
-}
-
-@media (max-width: 992px) {
-	.navbar {
-		height: 60px;
-	}
-
 	.navbar-menu li a {
 		font-size: 0.9em;
 	}
@@ -319,36 +284,80 @@ dd {
 	}
 
 	main p {
+		font-size: 1.1em;
+	}
+
+	.numberInput {
+		font-size: 1.05em;
+		width: 190px;
+		margin: 6px 6px;
+	}
+
+	.solveIt {
+		width: 240px;
 		font-size: 1em;
+	}
+
+	.answers dl {
+		width: 75%;
+	}
+
+	.answers dt {
+		font-size: 1em;
+	}
+}
+
+@media (max-width: 992px) {
+	.navbar-menu li a {
+		font-size: 0.85em;
+	}
+
+	.navbar-menu li .current {
+		font-size: 0.95em;
+	}
+
+	.navbar-brand {
+		font-size: 20px;
+	}
+
+	.header-content h1 {
+		font-size: 28px;
+	}
+
+	.header-content h4 {
+		font-size: 16px;
+	}
+
+	main p {
+		font-size: 0.95em;
 	}
 
 	.numberInput {
 		font-size: 1em;
 		width: 170px;
+		height: 35px;
+		margin: 5px 5px;
 	}
 
 	.solveIt {
-		height: 40px;
-		width: 220px;
-		font-size: 1em;
+		height: 35px;
+		width: 200px;
+		font-size: 0.9em;
 	}
 
-	/*dt {
-		font-size: 1em;
+	.answers dt {
+		font-size: 0.95em;
 	}
 
-	dd {
-		font-size: 1.1em;
-	}*/
+	.answers dd {
+		font-size: 1em;
+		padding: 0.4em;
+	}
 }
 
 @media (max-width: 768px) {
-	.navbar {
-		height: 60px;
-	}
-
 	.navbar-menu li a, .navbar-menu li .current {
-		font-size: 0.75em;
+		font-size: 0.8em;
 		padding: 5px;
 	}
 
@@ -369,23 +378,136 @@ dd {
 	}
 
 	.numberInput {
-		font-size: 1em;
+		font-size: 0.9em;
 		width: 130px;
 	}
 
 	.solveIt {
-		height: 35px;
 		width: 180px;
+		font-size: 0.8em;
+	}
+
+	.answers dl {
+		width: 90%;
+	}
+
+	.answers dt {
+		font-size: 0.9em;
+	}
+
+	.answers dd {
+		font-size: 0.9em;
+		padding: 0.2em;
+	}
+}
+
+@media (max-width: 576px) {
+	.navbar-menu {
+		margin-left: 40px;
+	}
+
+	.navbar-menu li a, .navbar-menu li .current {
+		font-size: 0.75em;
+	}
+
+	.navbar-brand {
+		font-size: 16px;
+	}
+
+	.header-content h1 {
+		font-size: 20px;
+	}
+
+	.header-content h4 {
+		font-size: 14px;
+	}
+
+	main p {
+		font-size: 0.8em;
+	}
+
+	.numberInput {
 		font-size: 0.85em;
+		width: 100px;
+		height: 20px;
+		margin: 3px 0px;
+	}
+
+	.solveIt {
+		height: 30px;
+		width: 130px;
+		font-size: 0.75em;
+	}
+
+	.answers dl {
+		width: 95%;
+	}
+
+	.answers dt {
+		font-size: 0.8em;
+	}
+
+	.answers dd {
+		font-size: 0.8em;
+	}
+}
+
+/*@media (max-width: 376px) {
+	.navbar {
+		height: 60px;
+		margin-bottom: 30px;
+	}
+
+	.navbar-menu {
+		margin-left: 40px;
+	}
+
+	.navbar-menu li a, .navbar-menu li .current {
+		font-size: 0.75em;
+	}
+
+	.navbar-brand {
+		font-size: 18px;
+	}
+
+	.header-content h1 {
+		font-size: 20px;
+	}
+
+	.header-content h4 {
+		font-size: 14px;
+	}
+
+	main p {
+		font-size: 0.8em;
+	}
+
+	.numberInput {
+		font-size: 0.85em;
+		width: 100px;
+		height: 20px;
+		margin: 3px 0px;
+	}
+
+	.solveIt {
+		height: 30px;
+		width: 130px;
+		font-size: 0.75em;
 		padding: 5px;
 		margin-top: 0;
 	}
 
-	dt {
-		font-size: 1em;
+	.answers dl {
+		width: 95%;
 	}
 
-	dd {
-		font-size: 1em;
+	.answers dt {
+		font-size: 0.8em;
 	}
-}
+
+	.answers dd {
+		font-size: 0.8em;
+		padding: 0.2em;
+		padding-left: 0em;
+	}
+}*/
