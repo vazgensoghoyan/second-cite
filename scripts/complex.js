@@ -81,10 +81,16 @@ class Complex {
         if (re == 0 & im == 0) {
             return "0";
         }
-        if (im == 0) {
-            return re.toString();
+
+        let result = (re != 0) ? re.toString() : "";
+        if (im != 0) {
+            if (im == 1 || im == -1)
+                result += (im < 0) ? "-i" : "i";
+            else
+                result += (im < 0) ? "-" + (-im).toString() : "+" + im.toString();
         }
-        return re + " + i * " + im;
+        
+        return (result[0] == "+") ? result.substring(1, result.length - 1) : result;
     }
 }
 
