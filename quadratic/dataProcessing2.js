@@ -24,7 +24,7 @@ function printResult() {
         }
         index++;
         html += '<dt>x' + index + '</dt>'
-        html += '<dd>' + new Complex(i.re, i.im, 10) + '</dd>';
+        html += '<dd>' + new Complex(i.re, i.im, 5) + '</dd>';
         return true;
     })
     

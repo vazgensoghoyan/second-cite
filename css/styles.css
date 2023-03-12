@@ -101,7 +101,7 @@ body {
 /*main part*/
 
 .header {
-	min-height: 700px;
+	margin-top: 100px;
 }
 
 .header-content h1 {
