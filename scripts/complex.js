@@ -74,6 +74,22 @@ class Complex {
         );
     }
 
+    round(acc = this.accuracy) {
+        return new Complex(
+            this.re.toFixed(acc),
+            this.im.toFixed(acc)
+        );
+    }
+
+    conjugate() {
+        return new Complex(this.re, -this.im);
+    }
+
+    static areEqual(n1, n2) {
+        return  (n1.re - n2.re).toFixed(n1.accuracy / 2 + n2.accuracy / 2) == 0 &&
+                (n1.im - n2.im).toFixed(n1.accuracy / 2 + n2.accuracy / 2) == 0;
+    }
+
     toString() {
         const re = parseFloat(parseFloat(this.re).toFixed(this.accuracy));
         const im = parseFloat(parseFloat(this.im).toFixed(this.accuracy));
@@ -146,5 +162,5 @@ console.log(stringToComplex("i"), new Complex(0, 1))
 console.log(stringToComplex("-23"), new Complex(-23))
 console.log(stringToComplex("1345"), new Complex(1345))
 console.log(stringToComplex("2i"), new Complex(0, 2))
-console.log(stringToComplex("-17i"), new Complex(0, -17))*/
-console.log(stringToComplex("32-2"))
+console.log(stringToComplex("-17i"), new Complex(0, -17))
+console.log(stringToComplex("32-2"))*/
